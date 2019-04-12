@@ -1,0 +1,30 @@
+[submodule "components/ubirch-esp32-storage"]
+	path = components/ubirch-esp32-storage
+	url = https://github.com/ubirch/ubirch-esp32-storage.git
+[submodule "components/ubirch-mbed-msgpack"]
+	path = components/ubirch-mbed-msgpack
+	url = https://github.com/ubirch/ubirch-mbed-msgpack.git
+[submodule "components/ubirch-protocol"]
+	path = components/ubirch-protocol
+	url = https://github.com/ubirch/ubirch-protocol.git
+[submodule "components/ubirch-mbed-nacl-cm0"]
+	path = components/ubirch-mbed-nacl-cm0
+	url = https://github.com/ubirch/ubirch-mbed-nacl-cm0.git
+[submodule "components/arduino-esp32"]
+	path = components/arduino-esp32
+	url = https://github.com/ubirch/arduino-esp32.git
+[submodule "components/ubirch-esp32-networking"]
+	path = components/ubirch-esp32-networking
+	url = https://github.com/ubirch/ubirch-esp32-networking.git
+[submodule "components/ubirch-esp32-console"]
+	path = components/ubirch-esp32-console
+	url = https://github.com/ubirch/ubirch-esp32-console.git
+[submodule "components/ubirch-esp32-api-http"]
+	path = components/ubirch-esp32-api-http
+	url = https://github.com/ubirch/ubirch-esp32-api-http.git
+[submodule "components/ubirch-esp32-key-storage"]
+	path = components/ubirch-esp32-key-storage
+	url = https://github.com/ubirch/ubirch-esp32-key-storage.git
+[submodule "components/ubirch-esp32-ota"]
+	path = components/ubirch-esp32-ota
+	url = https://github.com/ubirch/ubirch-esp32-ota
