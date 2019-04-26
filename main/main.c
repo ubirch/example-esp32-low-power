@@ -336,6 +336,8 @@ static void ota_task(void __unused *pvParameter) {
 	EventBits_t event_bits;
 
 	for (;;) {
+		xTaskCreate(&enter_console_task, "console", 4096, NULL, 8, &console_handle);
+
 		event_bits = xEventGroupWaitBits(network_event_group, (NETWORK_ETH_READY | NETWORK_STA_READY),
 		                                 false, false, portMAX_DELAY);
 		if (event_bits & (NETWORK_ETH_READY | NETWORK_STA_READY)) {

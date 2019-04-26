@@ -17,7 +17,7 @@ In order to know in which state the application is, this is stored in the
 After every wakeup the application first checks for the reason, why it woke up
 in [get_wakeup_reason()](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L132)
 and afterwards checks, what it has to do in
-[check_schedule()](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L409).
+[check_schedule()](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L411).
 
 The current implementation includes three schedulers, depending on the system time:
 
@@ -27,7 +27,7 @@ The current implementation includes three schedulers, depending on the system ti
 
 
 
-### [sleep_schedule](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L390)
+### [sleep_schedule](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L392)
 
 The sleep scheduler is entered, when the application controller wakes up and
 there is nothing to do.
@@ -38,7 +38,7 @@ to allow the controller to go back to sleep.
 
 
 
-### [ota_schedule](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L398)
+### [ota_schedule](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L400)
 
 The Over The Air (OTA) scheduler is entered, when the application controller wakes up and
 a over the air update has to be checked.
@@ -55,7 +55,7 @@ waits for the `MAIN_SLEEP_READY` bit and allows the controller to go back to sle
 
 
 
-### [sensor_schedule](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L375)
+### [sensor_schedule](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L377)
 
 The sensor scheduler is entered, when the application controller wakes up and
 a sensor measurement has to be performed.
@@ -67,7 +67,7 @@ if a wifi connection has been succesfully established.
 waits for an ethernet connection `NETWORK_ETH_READY` or a wifi connection `NETWORK_STA_READY`
 and tries to update the time via sntp.
 When the task is completed, it sets the `MAIN_TIME_READY` bit.
-- [key_register_task](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L355)
+- [key_register_task](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L357)
 waits for the `MAIN_TIME_READY` bit and performs a registers the public key at the backend,
 if this is not already done.
 - [sensor_task](https://github.com/ubirch/example-esp32-low-power/blob/master/main/main.c#L229)
